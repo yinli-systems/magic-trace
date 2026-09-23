@@ -651,9 +651,9 @@ module%test _ = struct
 
   let%expect_test "cbr event with uppercase state" =
     check
-      "377433/377433 1693789.232275122:          1                                         \
-       cbr:   D                      cbr: 36 freq: 3629 MHz (450%)                   0     \
-       6143f240a145 main+0x1c (/root/foo)";
+      "377433/377433 1693789.232275122:          \
+       1                                         cbr:   D                      cbr: 36 \
+       freq: 3629 MHz (450%)                   0     6143f240a145 main+0x1c (/root/foo)";
     [%expect
       {|
         ((Ok
